@@ -1,0 +1,11 @@
+{{ define "main" }}
+<a href=".." id="back">< back</a>
+<a onclick="download()">Download</a>
+{{ .Content }}
+
+<script>
+    function download() {
+        document.title = "{{ .Page.Title }};download;{{ .Site.BaseURL }}{{ .Params.DLURL }}"
+    }
+</script>
+{{ end }}
