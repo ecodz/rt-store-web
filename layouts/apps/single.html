@@ -4,8 +4,11 @@
 {{ .Content }}
 
 <script>
+    var downloaded = false
     function download() {
-        document.title = "{{ .Page.Title }};download;{{ .Site.BaseURL }}{{ .Params.DLURL }}"
+        if(!downloaded)
+            document.title = "{{ .Page.Title }};download;{{ .Site.BaseURL }}{{ .Params.DLURL }}"
+        downloaded = !downloaded
     }
 </script>
 {{ end }}
