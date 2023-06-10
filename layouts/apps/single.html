@@ -1,6 +1,9 @@
 {{ define "main" }}
-<a href=".." id="back">< back</a>
-<a onclick="download()">Download</a>
+<a href=".." id="back">< back</a><br>
+<div style="margin: 8px;">
+    <h1>{{ .Page.Title }}</h1>
+    <button onclick="download()" class="large primary">Download</button>
+</div>
 {{ .Content }}
 
 <script>

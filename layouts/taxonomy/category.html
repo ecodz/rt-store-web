@@ -4,7 +4,7 @@
 
     {{ .Content }}
 
-        {{ range .Pages }}
+        {{ range .Data.Pages }}
                 <a href="{{ .RelPermalink }}"><div class="tile">
                     {{ .Title }}
                 </div></a>

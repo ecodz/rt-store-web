@@ -2,7 +2,7 @@
 title: "Example"
 DLURL: "apps/example/example.bat"
 draft: false
-category: "example"
+categories: "example"
 ---
 
 # Example App    
